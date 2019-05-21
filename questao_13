@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+  int i, n, soma = 1, v[n];
+
+  printf("Informar N: ");
+  scanf("%d", &n);
+  
+  v[0] = 0;
+  v[1] = 1;
+
+  printf("%d | ", v[0]);
+  printf("%d | ", v[1]);
+
+  if(n>2){
+    for(i=2; i<n; i++){
+      v[i] = v[i-1] + v[i-2];
+      printf("%d |", v[i]);
+      soma = soma + v[i];
+    }
+  }
+  printf("\nSoma: %d", soma);
+}
