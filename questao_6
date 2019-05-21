@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+  int i=0, x=0;
+  int l, y; 
+  printf ("escolha um numero L\n");
+  scanf("%d", &l);
+  for(i=1;i*i< l;i++){
+     x =i*i;
+   printf ("%d\n", i);
+   }
+   
+  printf(" o maior valor do quadrado eh %d ",  x);
+ y= sqrt (x); 
+ printf("logo o maior numero x eh %d\n", y);
+   
+  
+  return 0;
+}
