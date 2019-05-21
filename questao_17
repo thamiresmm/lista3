@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(){
+  int c, f;
+
+  printf("Valor C: ");
+  scanf("%d", &c);
+
+  f = celsiusToFarenheit(c);
+
+  printf("F: %d", f);
+}
+
+int celsiusToFarenheit(int celsius){
+  float farenheit;
+
+  farenheit = (celsius*9/5) + 32;
+
+  return farenheit;
+}
