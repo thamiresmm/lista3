@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+  int i=0, x=0;
+  int l; 
+  printf ("escolha uma tabuada L\n");
+  scanf("%d", &l);
+  for(i=1;i<= 10;i++){
+     x =l*i;
+   printf ("%d= %d * %d\n", x,l,i);
+   }
+     return 0;
+}
