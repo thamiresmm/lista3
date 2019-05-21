@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+  int i=0, x=0, y=0;
+  int l; 
+  for(i=1;i<= 10;i++){
+     printf("digite um numero:");
+     scanf("%d", &l);
+     if(10<= l && l<=50){
+       x= x+1;
+     }
+    else{
+      y = y +1;
+    }
+    i=i+0;  
+   }
+   printf("%d estao dentro do intervalo\n", x);
+   printf("%d estao fora do intervalo\n", y);
+     return 0;
+}
+
