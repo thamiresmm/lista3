@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <conio.h>
+
+int main(){     
+    int i, n, x;
+    
+    printf("Digite numero: ");  
+    scanf("%d", &n);
+    
+    x = n;
+    
+    for(i=2; i<=n; i++){
+        if(n%i==0){
+            n = n/i;
+            printf("%d x ",i);
+        }
+    }
+    printf("= %d", x);
+}
