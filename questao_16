@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <conio.h>
+
+int main(){
+    char str[100];
+  
+    int i;
+    
+    printf("Digite frase: ");
+    gets(str);
+    
+    for(i=(unsigned)strlen(str); i>=0; i--){
+        printf("%c",str[i]);
+    }  
+}
