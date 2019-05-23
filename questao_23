@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+  char texto[100]; 
+    int i=0, contador=0;
+    int num;
+    int palavra=0;
+    printf("digite e ao fim digite espaço e enter\n");
+    fgets(texto,100,stdin);
+    num= strlen(texto)-1;
+    for(i=0;i<num;i++){
+      if(texto[i]!=32){
+        contador++;
+      }
+    
+    }
+    printf("tem %d carcteres", contador);
+    
+    
+    palavras = 0;
+
+  for(i=0; i<num; i++){
+    if(texto[i] == ' ' &&
+       texto[i+1] != ' ' ){
+      palavras=palavras+1;
+    }
+    
+    
+  }
+  printf("palavras = %d\n", palavras);
+
+  return 0;
+}
