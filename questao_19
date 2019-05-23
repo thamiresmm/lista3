@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(){
+  int a, b;
+
+  printf("Valor de A [A,B]: ");
+  scanf("%d", &a);
+  printf("Valor de B [A,B]: ");
+  scanf("%d", &b);
+
+  int x, y;
+
+  srand(time(NULL));
+
+  y = (b+1) - a;
+
+  x = rand()%b+a;
+
+  printf("%d", x);
+}
